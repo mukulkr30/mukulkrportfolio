@@ -1,0 +1,96 @@
+/* ===== Ranking Section ===== */
+.ranking-section {
+  padding: 3 rem 2rem;
+  background: rgb(3, 1, 14); /* same dark base as Home */
+  color: #e5e7eb;
+}
+
+.ranking-title {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  color: rgb(250, 191, 47); /* SAME gold as Home */
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+/* ===== Grid ===== */
+.ranking-grid {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+/* ===== Card ===== */
+.ranking-card {
+  background:  #020617;
+  border-radius: 20px;
+  padding: 2.2rem;
+  border: 1px solid rgba(250, 191, 47, 0.15);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.02),
+    0 20px 40px rgba(0, 0, 0, 0.7);
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hover (same as Skill & Project cards) */
+.ranking-card:hover {
+  transform: translateY(-8px);
+  border-color: rgb(250, 191, 47);
+  box-shadow:
+    0 0 25px rgba(250, 191, 47, 0.35),
+    0 30px 70px rgba(0, 0, 0, 0.85);
+}
+
+/* ===== Platform Name ===== */
+.platform-name {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #e5f7ff;
+}
+
+/* ===== Ranking Info ===== */
+.ranking-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.rank-label {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+.rank-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: rgb(250, 191, 47);
+}
+
+/* ===== Profile Link ===== */
+.ranking-link {
+  margin-top: 1.5rem;
+  align-self: flex-start;
+  font-size: 0.9rem;
+  color: rgb(250, 191, 47);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.25s ease;
+}
+
+.ranking-link:hover {
+  border-bottom-color: rgb(250, 191, 47);
+  transform: translateX(4px);
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 600px) {
+  .ranking-title {
+    font-size: 2.1rem;
+  }
+}

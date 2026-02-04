@@ -1,0 +1,107 @@
+.home {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.home-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* ===== Left ===== */
+.home-text {
+  max-width: 60%;
+}
+
+/* ===== Right Image Frame ===== */
+.home-image {
+  position: relative;
+  width: 380px;
+  height: 480px;
+  border-radius: 20px;
+  padding: 4px;
+  background: linear-gradient(
+    135deg,
+    rgb(250, 191, 47),
+    #6a5acd,
+    #00c6ff
+  );
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.home-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  background: rgb(3, 1, 14);
+}
+
+/* ===== Cursor ===== */
+.cursor {
+  animation: blink 1s steps(1) infinite;
+  color: #7f7f7f;
+  font-size: 4rem;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* ===== Highlighted Text ===== */
+.csr {
+  animation: blin 1.5s ease-in-out infinite alternate;
+  color: rgb(250, 191, 47);
+  font-weight: 600;
+}
+
+@keyframes blin {
+  from { opacity: 0.4; }
+  to   { opacity: 1; }
+}
+
+.desc {
+  text-align: justify;
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column-reverse; /* image on top */
+    text-align: center;
+  }
+
+  .home-text {
+    max-width: 100%;
+  }
+
+  .home-image {
+    width: 260px;
+    height: 340px;
+    margin-bottom: 1.5rem;
+  }
+
+  .desc {
+    text-align: center;
+  }
+
+  .cursor {
+    font-size: 2.5rem;
+  }
+}
+
+/* ===== Small Phones ===== */
+@media (max-width: 480px) {
+  .home-image {
+    width: 220px;
+    height: 300px;
+  }
+}

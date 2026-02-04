@@ -1,0 +1,84 @@
+/* ===== Skills Section ===== */
+.skill-section {
+  padding: 3 rem 2rem;
+  background: rgb(3, 1, 14); /* same dark base as Home */
+  color: #e5e7eb;
+}
+
+.skill-title {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  color: rgb(250, 191, 47); /* SAME gold as Home */
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.skills-title {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  color: rgb(250, 191, 47); /* SAME gold as Home */
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+/* ===== Grid ===== */
+.skills-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+/* ===== Skill Card ===== */
+.skill-card {
+  background: #020617; /* same as image bg */
+  border-radius: 20px;
+  padding: 2.2rem 1.8rem;
+  text-align: center;
+  border: 1px solid rgba(250, 191, 47, 0.15);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.02),
+    0 20px 40px rgba(0, 0, 0, 0.7);
+  transition: all 0.35s ease;
+}
+
+/* Hover (same feel as Home image frame) */
+.skill-card:hover {
+  transform: translateY(-8px);
+  border-color: rgb(250, 191, 47);
+  box-shadow:
+    0 0 25px rgba(250, 191, 47, 0.35),
+    0 30px 70px rgba(0, 0, 0, 0.85);
+}
+
+/* ===== Icon ===== */
+.skill-icon {
+  font-size: 3.2rem;
+  color: rgb(250, 191, 47); /* gold accent */
+  margin-bottom: 1rem;
+}
+
+/* ===== Text ===== */
+.skill-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.7rem;
+  color: #e5f7ff; /* soft cyan like Home text */
+}
+
+.skill-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 600px) {
+  .skills-title {
+    font-size: 2.1rem;
+  }
+}
