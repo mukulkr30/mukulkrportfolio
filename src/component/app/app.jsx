@@ -87,7 +87,7 @@ export const projects = [
     title: "Personal Portfolio",
     date: "2026",
     desc: "A personal portfolio website showcasing projects, skills, and experience with a modern, responsive UI and interactive components built using React.",
-    github: "https://github.com/mukulkr30/portfolio",
+    github: "https://github.com/mukulkr30/mukulkrportfolio.git",
   },
   {
     title: "Vehicle Speed Detection System",
