@@ -14,11 +14,7 @@ export const skills = [
     title: "Python",
     desc: "Skilled Python developer with hands-on experience in automation, scripting, and building scalable applications.",
   },
-  {
-    icon: <FaCogs />,
-    title: "Machine Learning",
-    desc: "Enthusiastic about machine learning, with practical experience in data analysis, model building, and AI-driven solutions.",
-  },
+  
   {
     icon: <FaHtml5 />,
     title: "HTML",
@@ -59,6 +55,12 @@ export const core_subject=[
     title: "Data Structures and Algorithms",
     abbr: "(DSA)",
     desc: "Proficient in data structures and algorithms including arrays, linked lists, stacks, queues, trees, graphs, recursion, and problem-solving using C++ and Python."
+  },
+  {
+    icon: <FaCogs />,
+    abbr: "(ML)",
+    title: "Machine Learning",
+    desc: "Enthusiastic about machine learning, with practical experience in data analysis, model building, and AI-driven solutions.",
   },
   {
     icon: <FaObjectGroup />,
